@@ -55,10 +55,14 @@ filter_btn.on("click", function() {
 
   console.log(inputValue);
   console.log(events);
-
+  
   var filteredData = events.filter(event => event.datetime === inputValue);
 
-  console.log(filteredData);
+  if (event.datetime === inputValue){
+    console.log(filteredData);
+  }
+
+    
 });
 
 
